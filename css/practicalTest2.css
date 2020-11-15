@@ -1,0 +1,270 @@
+body{
+  margin:0;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+h1{
+  font-weight: 450;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2{
+  font-weight: 400;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #009ee6;
+}
+
+a:hover {
+  color: #E57A00;
+}
+
+nav{
+  height: 3em;
+  line-height: 2.3em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 600;
+  display: inline-block;
+  width: 100%;
+  background: rgba(0,0,0,.55);
+  border: 0;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transform: translateZ(0);
+}
+
+nav.nav_closed{
+  overflow: hidden;
+}
+
+a#menu{
+  float: right;
+  border: 1px solid #ccc;
+  color: #FFE3CD;
+  width: 4em;
+  margin-top: 5px;
+  margin-right: 15px;
+  font-weight: 300;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+a#menu:hover{
+  background: rgba(255,255,255,0.4);
+  color: #333;
+  font-weight: 600;
+}
+
+ul#navlist {
+  clear: right;
+  list-style: none;
+  font-weight: 300;
+}
+
+nav.nav_closed ul#navlist{
+  display: none;
+}
+
+nav.nav_open{
+  overflow: visible;
+  background: rgba(0,0,0,0.85);
+}
+
+nav.nav_open ul#navlist{
+  display: block;
+  background: rgba(0,0,0,0.85);
+}
+
+nav.nav_open a#menu{
+  color: #333;
+  background: #999;
+}
+
+nav ul#navlist li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-top: 1px #ccc solid;
+  color: #FFE3CD;
+  text-decoration: none;
+}
+
+nav ul#navlist li a:hover{
+  background: #009ee6;
+  color: #fff;
+  text-decoration: none;
+}
+
+#mainnav{
+  padding-top: 4em;
+}
+
+#mainnav li{
+  width: 100%;
+  text-align: center;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-top: 1px #ccc solid;
+}
+
+section#page-header{
+  height: 100vh;
+  width: 100%;
+  background: #ccc url("../imgs/sunset.jpg") no-repeat center center;
+  background-size: cover;
+  color: #000;
+  display: table;
+}
+
+section#page-header header{
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+section#page-header header h1{
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 1em;
+}
+
+section#page-header header h2{
+  font-size: 1.45em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+section.page-content{
+  clear: both;
+}
+
+section.page-content div{
+  width: 85%;
+  max-width: 1024px;
+  margin: 4em auto;
+  padding-top: 2em;
+}
+
+section#profile div{
+  margin-top: 100;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: rgb(255, 204, 230);
+  padding-bottom: 2em;
+}
+
+section#profile img{
+  float: right;
+  margin-right: 0.9em;
+}
+
+section#profile ul{
+  margin: 0;
+  margin-left: 1em;
+  padding: 0;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+section#profile ul li{
+  margin-bottom: 8px;
+  padding: 2px 5px;
+  display: table;
+}
+
+section#semesterResult div{
+  margin-top: 100;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: rgb(204, 255, 221);
+}
+
+section#semesterResult table, th, td{
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+section#semesterResult th, td{
+  padding: 10px;
+  text-align: center;
+}
+
+section#educationBackground div{
+  margin-top: 100;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: rgb(204, 204, 255);
+}
+
+section#extraCurricularActivities div{
+  margin-top: 100;
+  padding-bottom: 0.1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: rgb(179, 204, 204);
+}
+
+section#additionalDetails div {
+  margin-top: 100;
+  padding-bottom: 0.2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: rgb(255, 224, 179);
+}
+
+section#additionalDetails dl.boxed {
+  border: 1px solid red;
+}
+
+section#referees div {
+  margin-top: 100;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background: rgb(204, 255, 255);
+}
+
+section#referees table, th, td{
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+section#referees th, td{
+  padding: 10px;
+}
+
+#t01 th{
+  background-color: rgb(51, 77, 77);
+  color: white;
+}
+
+section.page-content article h3{
+  font-weight: 700;
+  font-size: 1.15em;
+  margin-bottom: -0.8em;
+}
+
+section.page-content article dl{
+  margin:1.5em auto;
+  margin-bottom: 3em;
+}
+
+section.page-content article dt{
+  font-weight: 700;
+}
+
+section.page-content article dd{
+  margin-bottom: 0.5em;
+}
